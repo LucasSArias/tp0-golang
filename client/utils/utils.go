@@ -40,6 +40,10 @@ func LeerConsola() {
 	log.Println("Ingrese los mensajes")
 	text, _ := reader.ReadString('\n')
 	log.Print(text)
+	for text != "\n" {
+		text, _ := reader.ReadString('\n')
+		log.Print(text)
+	}
 }
 
 func GenerarYEnviarPaquete() {
